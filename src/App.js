@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import NewComponent from "./component/NewComponent";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NewComponent
+        firstName="Reza"
+        lastName="Amraei"
+        age={22}
+        hairColor="Black"
+      />
+      <NewComponent
+        firstName="Rex"
+        lastName="Amraei"
+        age={21}
+        hairColor="Blonde"
+      />
+      <NewComponent
+        firstName="Craig"
+        lastName="Amraei"
+        age={2}
+        hairColor="Black"
+      />
+      <NewComponent
+        firstName="Carol"
+        lastName="Amraei"
+        age={1}
+        hairColor="White"
+      />
     </div>
   );
 }
